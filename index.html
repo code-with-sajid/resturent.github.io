@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <title>Resturent</title>
+  <style>
+    /* *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+             } */
+
+    header {
+      background-color: rgb(239, 172, 48);
+
+    }
+
+
+    .logo img {
+      width: 100%;
+    }
+
+    .menu-content {
+      margin-top: 100px;
+    }
+
+    .menu-content p {
+      font-size: 12px;
+      border: 1.5px dashed rgb(59, 8, 8);
+      ;
+      font-weight: 700;
+      color: rgb(59, 8, 8);
+      /* margin-bottom: 0; */
+    }
+
+    .menu-content h1 {
+      font-size: 5rem;
+      font-weight: 800;
+      color: rgb(59, 8, 8);
+
+
+    }
+
+    .menu-content h3 {
+      font-weight: 900;
+      font-size: 55px;
+      color: rgb(59, 8, 8);
+      line-height: 5px;
+
+    }
+
+    .oder-list li {
+      font-weight: 500;
+    }
+
+
+
+
+
+    .section-text {
+      background: url("./img/Burger Image.png");
+      font-size: 20px;
+      color: white;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 121px;
+    }
+
+
+
+    .section-secidone {
+      background: url("./img/Image3.png");
+      color: white;
+
+      width: 100%;
+      padding: 28px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .section-secidone h5 {}
+
+    .section-seciend {
+      background: url("./img/Image2.png");
+      color: white;
+      padding: 42px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 42px;
+      
+    }
+
+    .section-seciend h6 {}
+
+    .hero-always {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30px;
+
+    }
+
+    .card-button {
+      display: inline-block;
+      background-color: rgb(220, 46, 46);
+      padding: 0.2rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    .card-title {
+      color: rgb(59, 8, 8);
+    }
+
+    .card-text {
+      color: rgb(59, 8, 8);
+      line-height: 1;
+    }
+
+    /* .card-group{
+          display: flex;
+          justify-content: center;
+          align-items: center; */
+    /* }  */
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .section-event-p {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: rgb(59, 8, 8);
+    }
+
+    .section-event-ptwo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: rgb(59, 8, 8);
+
+    }
+
+    .section-event-pthree {
+      color: rgb(59, 8, 8);
+    }
+
+    .section-event-img {
+
+      /* margin-left: 12px; */
+      background-image: url("./img/imagenew.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* width: 100%; */
+      background-position: center;
+      padding: 17%;
+    }
+
+    /* .section-event-one{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+         } */
+    .section-event-box {
+      /* display: flex; */
+      /* flex-wrap: nowrap; */
+      /* margin-top: 49px; */
+      /* box-shadow:horizental vertical blur spread */
+      box-shadow: 2px 20px 14px #b5b5b5;
+      /* border: 1px solid black; */
+      margin: 3px;
+    }
+
+    .section-teble-p {
+      font-size: 1.2rem;
+      color: rgb(59, 8, 8);
+
+    }
+
+    .table-heding {
+      color: rgb(59, 8, 8);
+      font-size: 3rem;
+      font-weight: 700;
+
+    }
+
+    .section-teble {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .section-book-table {
+
+      /* width: 100%; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(213, 209, 209, 0.5), rgba(0, 0, 0, 0.5)), url('./img/background.png');
+
+
+    }
+
+    .book-table {
+      padding: 20%;
+    }
+
+    input.form-control.table-input {
+      margin: 10px;
+    }
+
+    .section-discover {
+      margin-top: 40px;
+    }
+
+    #footer-img {
+      background: url("./img/Group 6.png");
+      /* width: 100%; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* box-shadow: 2px 20px 14px #b5b5b5; */
+
+
+    }
+
+    .footer-p {
+      color: white;
+    }
+
+    .icon i {
+      color: white;
+      font-size: 2rem;
+
+    }
+
+    .icon span {
+      font-size: 10px;
+      color: white;
+    }
+
+    .icon-box {
+      margin-top: 50%;
+    }
+
+    .footer-logo {
+      width: 45%;
+      margin-top: 20%;
+    }
+
+    .showshal-icon {
+      color: white;
+      display: flex;
+
+    }
+
+    .img-2 {
+      width: 100%;
+    }
+
+    section.section-mainue {
+      margin: 50px 0;
+    }
+
+    #nevicon {
+      border: 1px solid rgb(240, 228, 228);
+      border-radius: 50%;
+      padding: 10px 10px;
+      background-color: white;
+      color: black;
+    }
+    .f-heding{
+      font-size: 28px;
+    font-weight: 700;
+
+    }
+
+    @media(max-width:992px) {
+
+
+
+      .section-text {
+        padding: 92px;
+      }
+
+      /* .section-event-img{
+    margin-left: 0;
+  } */
+
+      .section-secidone {
+        margin-top: 15px;
+      }
+
+      .section-seciend {
+        margin-top: 19px;
+      }
+    }
+
+    @media(max-width:768px) {
+      .menu-content {
+        margin-top: 30px;
+      }
+
+      .menu-content h1 {
+        font-size: 3rem;
+      }
+
+      .section-event-img {
+        width: 100%;
+        padding: 33%;
+
+      }
+
+      .icon-box {
+        margin: 5% 0;
+      }
+
+      .showshal-icon {
+        padding: 10px;
+      }
+
+    }
+
+    @media(max-width:500px) {
+      .book-table {
+        padding: 10%;
+      }
+    }
+
+    @media(max-width:370px) {
+      .logo img {
+        width: 50%;
+      }
+
+      /* .nav-link{
+        border-bottom: 2px solid black;
+        
+      } */
+      .book-table {
+        padding: 5%;
+      }
+
+      .section-text {
+        padding: 28px;
+      }
+
+      a.navbar-brand.logo {
+        width: 50%;
+      }
+
+      .section-event-img {
+        margin: 0;
+      }
+
+      .table-heding {
+        font-size: 1rem;
+      }
+
+      .section-secidone {
+        margin-top: 10px;
+      }
+
+      .icon-box {
+        margin-top: 10%;
+      }
+
+      .icon i {
+        font-size: 1rem;
+      }
+
+      .showshal-icon {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar navbar-expand-lg justify-content-between">
+      <div class="container">
+        <a class="navbar-brand logo" href="logo">
+          <img src="./img/Logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./story.html">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="menu-content">
+            <p>IT IS A GOOD TIME FOR THE GREAT TEST OF BURGERS</p>
+
+            <h1>BURGER</h1>
+            <h3>week</h3>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="banner_img"  data-aos="flip-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000">
+            <img src="./img/Image.png" alt="" class="img-2">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </header>
+  <section class="section-mainue">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <div class="section-text">
+            <p>TRY IT TODAY</p>
+            <h4>MOST POPULAR BURGER </h4>
+          </div>
+
+        </div>
+        <div class="col-md-6 ">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-secidone" data-aos="fade-down">
+                <p>TRY IT TODAY</p>
+                <h5>MORE FUN <br>MORE TASTE</h5>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="section-seciend" data-aos="fade-up">
+
+                <p>TRY IT TODAY</p>
+                <h6>FRESH & CHILI</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="container  hero-always">
+    <div class="row">
+
+      <p style="background-color: orange; color: rgb(59, 8, 8); font-weight: 600;">ALWAYS TESTY BURGER</p>
+
+    </div>
+    <div class="row">
+      <p style="color:rgb(59, 8, 8); font-size: 3rem; font-weight: 800;">CHOOSE & ENJOY</p>
+    </div>
+    <div class="row">
+      <p style="color:rgb(59, 8, 8) ; text-align: center;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Tempora cupiditate incidunt qui ipsam nulla, quam id iure velit nam perspiciatis. Maiores, sint magnam?
+        Voluptatum, quasi, deserunt, ipsam </p>
+    </div>
+  </div>
+
+
+  <!-- card -->
+
+  <div class="card-group">
+    <div class="card">
+      <img src="./img/Burger3.png" class="card-img-top" alt="..." style=" padding: 43px;">
+      <img src="./img/Shadow.png" class="card-img-top" style="position: relative; bottom: 27px;">
+
+      <div class="card-body">
+        <h5 class="card-title">Lorem, ipsum dolor.</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam.</p>
+        <p class="card-button">ORDER NOW</p>
+
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/Burger2.png" class="card-img-top" alt="..." style=" padding: 47px;">
+      <img src="./img/Shadow.png" class="card-img-top" style="position: relative; bottom: 27px;">
+
+      <div class="card-body">
+        <h5 class="card-title">Lorem, ipsum dolor.</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam.</p>
+        <p class="card-button">ORDER NOW</p>
+
+      </div>
+    </div>
+    <div class="card">
+      <img src="./img/Burger3.png" class="card-img-top" alt="..." style=" padding: 43px;">
+      <img src="./img/Shadow.png" class="card-img-top">
+
+      <div class="card-body">
+        <h5 class="card-title">Lorem, ipsum dolor.</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, ipsam</p>
+        <p class="card-button">ORDER NOW</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- card -->
+  <section class="section-discover">
+    <div class="container">
+      <div class="row section-event-box">
+        <div class="col-md-6 section-event-one">
+          <p class="section-event-p">DISCOVER</p>
+          <p class="section-event-ptwo">UPCOMING EVENTS</p>
+          <p class="section-event-pthree">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dignissimos
+            officia vero expedita reprehenderit dolorum asperiores voluptas possimus, repellendus blanditiis unde fugiat
+            .</p>
+        </div>
+        <div class="col-6 section-event-img">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-book-table mt-3">
+    <div class="container">
+
+      <div class="row book-table">
+        <p class="section-teble-p">RESERVATION</p>
+        <p class="table-heding">BOOK YOUR TABLE</p>
+        <div class="col-6">
+          <input type="text" class="form-control  table-input" placeholder="NAME">
+          <input type="text" class="form-control  table-input" placeholder="EMAIL">
+          <input type="text" class="form-control  table-input" placeholder="DATE">
+        </div>
+
+        <div class="col-6">
+          <input type="text" class="form-control  table-input" placeholder="TIME">
+          <input type="text" class="form-control  table-input" placeholder="PEOPLE">
+          <input type="text" class="form-control  table-input" placeholder="FIND A TABLE"
+            style="background-color: rgb(220, 46, 46); color: white;">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <footer style="background-color: black; padding-top: 10%;">
+    <div class="container">
+      <div class="row title">
+        <div class="col-md-5" style="color: white;">
+          <h5 class="f-heding">TITLEHERE</h5>
+          <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et explicabo nesciunt officiis
+            cupiditate, quia accusantium. Deleniti cumque nisi temporibus nesciunt?</P>
+          <div>
+            <a href=""><i class="fa-brands fa-instagram" id="nevicon"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" id="nevicon"></i></a>
+            <a href="whatsapp://send?abid=+923142863319&text=Hello%2C%20World!"><i class="fa-brands fa-whatsapp"
+                id="nevicon"></i></a>
+            <a href=""> <i class="fa-brands fa-facebook" id="nevicon"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-7" style="color: white;">
+          <div class="row">
+            <div class="col-md-4 text">
+              <h5 class="f-heding">ABOUT</h5>
+              <p>History</p>
+              <p>Our Team</p>
+              <P>Brand Guidelines</P>
+              <p>Terms&condition</p>
+              <p>Privacypolice</p>
+            </div>
+            <div class="col-md-4 text">
+              <h5 class="f-heding">SERVICES</h5>
+              <P>How to order</P>
+              <p>Our product</p>
+              <p>Order status</p>
+              <p>Promo</p>
+              <p>Payment Method</p>
+            </div>
+            <div class="col-md-4 text">
+              <h5 class="f-heding">OTHER</h5>
+              <P>Contact us</P>
+              <p>Help</p>
+              <p>Privacy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

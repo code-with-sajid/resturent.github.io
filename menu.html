@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+  <title>Menu</title>
+  <style>
+    /* *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+             } */
+
+    header {
+      background-color: rgb(239, 172, 48);
+
+    }
+
+
+    .logo img {
+      width: 50%;
+      border-radius: 0;
+      border: none;
+    }
+
+    .menu-content {
+      margin-top: 100px;
+    }
+
+    .menu-content p {
+      font-size: 12px;
+      border: 1.5px dashed rgb(59, 8, 8);
+      ;
+      font-weight: 700;
+      color: rgb(59, 8, 8);
+      /* margin-bottom: 0; */
+    }
+
+    .menu-content h1 {
+      font-size: 5rem;
+      font-weight: 800;
+      color: rgb(59, 8, 8);
+
+
+    }
+
+    .menu-content h3 {
+      font-weight: 900;
+      font-size: 55px;
+      color: rgb(59, 8, 8);
+      line-height: 5px;
+
+    }
+
+    .oder-list li {
+      font-weight: 500;
+    }
+
+
+
+
+
+    .section-text {
+      background: url("./img/Burger Image.png");
+      font-size: 20px;
+      color: white;
+      width: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 121px;
+    }
+
+
+
+    .section-secidone {
+      background: url("./img/Image3.png");
+      color: white;
+
+      width: 100%;
+      padding: 28px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .section-secidone h5 {}
+
+    .section-seciend {
+      background: url("./img/Image2.png");
+      color: white;
+      padding: 42px;
+      width: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-top: 42px;
+    }
+
+    .section-seciend h6 {}
+
+    .hero-always {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30px;
+
+    }
+
+    .card-button {
+      display: inline-block;
+      background-color: rgb(220, 46, 46);
+      padding: 0.2rem;
+      font-weight: 500;
+      color: white;
+    }
+
+    .card-title {
+      color: rgb(59, 8, 8);
+    }
+
+    .card-text {
+      color: rgb(59, 8, 8);
+      line-height: 1;
+    }
+
+    /* .card-group{
+          display: flex;
+          justify-content: center;
+          align-items: center; */
+    /* }  */
+    .card-body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .section-event-p {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: rgb(59, 8, 8);
+    }
+
+    .section-event-ptwo {
+      font-size: 2rem;
+      font-weight: 800;
+      color: rgb(59, 8, 8);
+
+    }
+
+    .section-event-pthree {
+      color: rgb(59, 8, 8);
+    }
+
+    .section-event-img {
+
+      /* margin-left: 12px; */
+      background-image: url("./img/imagenew.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* width: 100%; */
+      background-position: center;
+      padding: 17%;
+    }
+
+    /* .section-event-one{
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+         } */
+    .section-event-box {
+      /* display: flex; */
+      /* flex-wrap: nowrap; */
+      /* margin-top: 49px; */
+      /* box-shadow:horizental vertical blur spread */
+      box-shadow: 2px 20px 14px #b5b5b5;
+      /* border: 1px solid black; */
+      margin: 3px;
+    }
+
+    .section-teble-p {
+      font-size: 1.2rem;
+      color: rgb(59, 8, 8);
+
+    }
+
+    .table-heding {
+      color: rgb(59, 8, 8);
+      font-size: 3rem;
+      font-weight: 700;
+
+    }
+
+    .section-teble {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .section-book-table {
+
+      /* width: 100%; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: linear-gradient(rgba(213, 209, 209, 0.5), rgba(0, 0, 0, 0.5)), url('./img/background.png');
+
+
+    }
+
+    .book-table {
+      padding: 20%;
+    }
+
+    input.form-control.table-input {
+      margin: 10px;
+    }
+
+    .section-discover {
+      margin-top: 40px;
+    }
+
+    #footer-img {
+      background: url("./img/Group 6.png");
+      /* width: 100%; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* box-shadow: 2px 20px 14px #b5b5b5; */
+
+
+    }
+
+    .footer-p {
+      color: white;
+    }
+
+    .icon i {
+      color: white;
+      font-size: 2rem;
+
+    }
+
+    .icon span {
+      font-size: 10px;
+      color: white;
+    }
+
+    .icon-box {
+      margin-top: 50%;
+    }
+
+    .footer-logo {
+      width: 45%;
+      margin-top: 20%;
+      border-radius: 0;
+      border: none;
+    }
+
+    .showshal-icon {
+      color: white;
+      display: flex;
+
+    }
+
+    .img-2 {
+      width: 100%;
+    }
+
+    section.section-mainue {
+      margin: 50px 0;
+    }
+
+    /* contact uc */
+    .main-showshel {
+      padding: 5% 0%;
+    }
+
+    .contact {
+      background-image: url("./img/contact.png");
+      width: 100%;
+      margin: 43px 0px;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+
+    }
+
+    .container span {
+      font-size: 24px;
+      color: white;
+      font-weight: 700;
+      display: block;
+    }
+
+    .contact-perah {
+      color: white;
+    }
+
+    .contact-one {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      /* margin: 100px 0px; */
+
+    }
+
+    .contact-two {
+      /* padding: 100px 10px; */
+    }
+
+    .contact-icon {
+      color: rgb(179, 80, 45);
+      font-size: 40px;
+      margin: 10px 0px;
+    }
+
+    .contact h1 {
+      text-align: center;
+      font-size: 70px;
+      font-weight: 600;
+    }
+
+    .contact input {
+
+      border-style: none;
+      border-bottom: 1.5px solid black;
+      inline-size: -webkit-fill-available;
+      margin: 15px 6px;
+    }
+
+    .contact button {
+      background-color: black;
+      color: white;
+    }
+
+    .contect-showshel {
+      display: flex;
+      /* justify-content: space-around; */
+      padding: 15px;
+
+    }
+
+
+
+    .identic {
+      background-image: url('./img/story_background.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 5% 2% 0% 4%;
+      width: 100%;
+      margin-bottom: 40px;
+
+
+
+    }
+
+    .brend h1 {
+      color: #e7a962;
+      font-size: 65px;
+
+    }
+
+    .brend p {
+      color: white;
+      text-align: end;
+      line-height: 0;
+    }
+
+    .brend-two img {
+      width: 100%;
+      padding: 5px 1px 6px 92px;
+    }
+
+
+    .col-md-4.brend {
+      padding: 75PX;
+    }
+
+    .brend-three {
+      text-align: center;
+      padding-top: 50px;
+    }
+
+    .brend-three button {
+      background-color: rgb(237, 157, 9);
+      color: black;
+      border-style: none;
+    }
+
+    .historical {
+      width: 100%;
+
+    }
+
+    .sajid-1 {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .smile {
+      text-align: center;
+    }
+
+    .smile h1 {
+      font-size: 80px;
+    }
+
+    .smile p {
+      text-align: center;
+    }
+
+
+    .first {
+      background-image: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%)), url(./menu/images/picbg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      border: 5px solid orange;
+    }
+
+    .logo {
+      text-align: center;
+      font-size: 20px;
+      font-weight: 800;
+      color: white;
+    }
+
+    .logo:hover {
+      color: orange;
+      border: 1px solid black;
+
+    }
+
+
+    .logo-name {
+      text-align: center;
+      /* clip-path: polygon(100% 23%, 81% 49%, 100% 73%, 0 74%, 14% 47%, 0 25%); */
+      /* background-color: orangered; */
+      width: 100%;
+    }
+
+    .logo-name button {
+      background-color: orangered;
+      border-style: none;
+      padding: 5px 10px;
+      font-weight: 700;
+      margin-top: 12px;
+    }
+
+
+    img {
+      border-radius: 50%;
+      border: 2px solid orange;
+
+    }
+
+    p {
+      color: white;
+    }
+
+    span {
+      color: white;
+    }
+
+    .img1 img {
+      margin: 20px 0;
+    }
+
+    .contect {
+      margin: 36px 0;
+    }
+
+
+    .border_img {
+      text-align: center;
+    }
+
+    .border_img img {
+      height: 1000px;
+    }
+
+    .pera {
+      text-align: center;
+      color: white;
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    #nevicon {
+      border: 1px solid rgb(240, 228, 228);
+      border-radius: 50%;
+      padding: 10px 10px;
+      background-color: white;
+      color: black;
+    }
+
+    .f-heding {
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+
+
+
+
+
+    /* contact uc */
+
+    @media(max-width:992px) {
+
+
+
+      .section-text {
+        padding: 92px;
+      }
+
+      /* .section-event-img{
+    margin-left: 0;
+  } */
+
+      .section-secidone {
+        margin-top: 15px;
+      }
+
+      .section-seciend {
+        margin-top: 19px;
+      }
+    }
+
+    @media(max-width:768px) {
+      .border_img img {
+        display: none;
+
+      }
+    }
+
+    @media(max-width:768px) {
+      .menu-content {
+        margin-top: 30px;
+      }
+
+      .menu-content h1 {
+        font-size: 3rem;
+      }
+
+      .section-event-img {
+        width: 100%;
+        padding: 33%;
+
+      }
+
+      .icon-box {
+        margin: 5% 0;
+      }
+
+      .showshal-icon {
+        padding: 10px;
+      }
+
+    }
+
+    @media(max-width:500px) {
+      .book-table {
+        padding: 10%;
+      }
+    }
+
+    @media(max-width:370px) {
+      .logo img {
+        width: 50%;
+      }
+
+      /* .nav-link{
+        border-bottom: 2px solid black;
+        
+      } */
+      .book-table {
+        padding: 5%;
+      }
+
+      .section-text {
+        padding: 28px;
+      }
+
+      a.navbar-brand.logo {
+        width: 50%;
+      }
+
+      .section-event-img {
+        margin: 0;
+      }
+
+      .table-heding {
+        font-size: 1rem;
+      }
+
+      .section-secidone {
+        margin-top: 10px;
+      }
+
+      .icon-box {
+        margin-top: 10%;
+      }
+
+      .icon i {
+        font-size: 1rem;
+      }
+
+      .showshal-icon {
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg justify-content-between">
+      <div class="container">
+        <a class="navbar-brand logo" href="logo">
+          <img src="./img/Logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./menu.html">MENU</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="story.html">OUR STORY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">CONTACT US</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class="container-fluid first">
+      <div class="row">
+        <div class="col-md-12 logo">Food Lover</div>
+        <div class="col-md-12 logo-name"><button class="btn btn-outline-warning border">Food menu</button></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <p class="pera">Regular Item</p>
+        </div>
+        <div class="col-md-6">
+          <p class="pera">Best Item</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic1.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic2 (2).png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic3.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic4.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic5.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic6.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="border_img">
+              <img src="./menu/images/Line.png" alt="">
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="row">
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic7.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic8.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic9.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic10.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic3.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+              <div class="col-4">
+                <div class="img1">
+                  <img src="./menu/images/pic4.png" alt="" width="100%">
+                </div>
+              </div>
+              <div class="col-8">
+                <p class="contect"><span>Italin source musubown</span>Lorem, ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit.
+                  Beatae, labore.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <footer style="background-color: black; padding-top: 10%;">
+    <div class="container">
+      <div class="row title">
+        <div class="col-md-5" style="color: white;">
+          <h5 class="f-heding">TITLEHERE</h5>
+          <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et explicabo nesciunt officiis
+            cupiditate, quia accusantium. Deleniti cumque nisi temporibus nesciunt?</P>
+          <div>
+            <a href=""><i class="fa-brands fa-instagram" id="nevicon"></i></a>
+            <a href=""><i class="fa-brands fa-twitter" id="nevicon"></i></a>
+            <a href="whatsapp://send?abid=+923142863319&text=Hello%2C%20World!"><i class="fa-brands fa-whatsapp"
+                id="nevicon"></i></a>
+            <a href=""> <i class="fa-brands fa-facebook" id="nevicon"></i></a>
+          </div>
+
+        </div>
+        <div class="col-md-7" style="color: white;">
+          <div class="row">
+            <div class="col-md-4 text">
+              <h5 class="f-heding">ABOUT</h5>
+              <p>History</p>
+              <p>Our Team</p>
+              <P>Brand Guidelines</P>
+              <p>Terms&condition</p>
+              <p>Privacypolice</p>
+            </div>
+            <div class="col-md-4 text">
+              <h5 class="f-heding">SERVICES</h5>
+              <P>How to order</P>
+              <p>Our product</p>
+              <p>Order status</p>
+              <p>Promo</p>
+              <p>Payment Method</p>
+            </div>
+            <div class="col-md-4 text">
+              <h5 class="f-heding">OTHER</h5>
+              <P>Contact us</P>
+              <p>Help</p>
+              <p>Privacy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    Fancybox.bind('[data-fancybox="gallery"]', {
+      // Your custom options for a specific gallery
+    });
+  </script>
+</body>
+
+</html>
